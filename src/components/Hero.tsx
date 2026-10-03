@@ -1,3 +1,5 @@
+import bannerStack from "../assets/banner-stack.png";
+
 const Hero = () => {
   return (
     <section
@@ -37,7 +39,7 @@ const Hero = () => {
 
 
         <div className="flex justify-center lg:justify-end">
-          <img src="src/assets/banner-stack.png" alt="Development Stack" className="w-full max-w-md object-contain"/>
+          <img src={bannerStack} alt="Development Stack" className="w-full max-w-md object-contain"/>
         </div>
     
       </div>

@@ -1,3 +1,5 @@
+import logo from "../assets/logo-text.png";
+
 const Footer = () => {
   return (
     <footer
@@ -11,8 +13,8 @@ const Footer = () => {
          
           <div className="md:col-span-2">
             <a href="#home" className="flex items-center">
-          <img src="src/assets/logo-text.png" alt="Dev Stack" className="h-9 w-auto object-contain"/>
-        </a>
+              <img src={logo} alt="Dev Stack" className="h-9 w-auto object-contain"/>
+            </a>
 
             <p className="mt-4 max-w-sm text-sm leading-6 text-gray-500">
               Curated tools, technologies, and resources for
