@@ -8,18 +8,11 @@ const Footer = () => {
 
         <div className="grid gap-10 md:grid-cols-4">
 
-          {/* Brand */}
+         
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2">
-              <div className="gradient-bg flex h-7 w-7 items-center justify-center rounded-md text-xs font-bold text-white">
-                DS
-              </div>
-
-              <span className="text-lg font-bold">
-                <span className="text-gray-900">Dev </span>
-                <span className="brand-gradient">Stack</span>
-              </span>
-            </div>
+            <a href="#home" className="flex items-center">
+          <img src="src/assets/logo-text.png" alt="Dev Stack" className="h-9 w-auto object-contain"/>
+        </a>
 
             <p className="mt-4 max-w-sm text-sm leading-6 text-gray-500">
               Curated tools, technologies, and resources for
@@ -41,7 +34,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Product */}
+          
           <div>
             <h3 className="text-xs font-bold uppercase tracking-wider text-gray-800">
               Product
@@ -65,7 +58,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Company */}
           <div>
             <h3 className="text-xs font-bold uppercase tracking-wider text-gray-800">
               Company
@@ -88,7 +80,6 @@ const Footer = () => {
 
         </div>
 
-        {/* Bottom */}
         <div className="mt-10 flex flex-col justify-between gap-4 border-t border-gray-100 pt-6 text-xs text-gray-400 sm:flex-row">
           <p>
             © 2026 Dev Stack. All rights reserved.
