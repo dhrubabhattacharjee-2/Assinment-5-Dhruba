@@ -1,4 +1,11 @@
-const Stack = ({ stack, onRemove, onRemoveAll }) => {
+import type { Technology } from "../type/tech";
+
+interface StackProps {
+  stack: Technology[];
+  onRemove: (id: string) => void;
+  onRemoveAll: () => void;
+}
+const Stack = ({ stack, onRemove, onRemoveAll }: StackProps) => {
   return (
     <aside className="h-fit rounded-xl border border-gray-100 bg-white p-4 shadow-sm lg:sticky lg:top-24">
 
@@ -27,7 +34,7 @@ const Stack = ({ stack, onRemove, onRemoveAll }) => {
             </p>
           </div>
         ) : (
-          stack.map((technology) => (
+          stack.map((technology: Technology) => (
             <div
               key={technology.id}
               className="flex items-center gap-3 rounded-lg border border-gray-100 p-2.5"

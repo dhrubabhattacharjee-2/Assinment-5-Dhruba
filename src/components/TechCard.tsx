@@ -1,4 +1,12 @@
-const TechCard = ({ technology, onAdd, isAdded }) => {
+import type { Technology } from "../type/tech.ts";
+
+interface TechCardProps {
+  technology: Technology;
+  onAdd: (technology: Technology) => void;
+  isAdded: boolean;
+}
+
+const TechCard = ({ technology, onAdd, isAdded }: TechCardProps) => {
   return (
     <div className="flex h-full flex-col rounded-xl border border-gray-100 bg-white p-4 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md">
 

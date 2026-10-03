@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-
 import TechCard from "./TechCard";
 import Stack from "./Stack";
+import type { Technology } from "../type/tech";
 
 const TechSection = () => {
-  const [technologies, setTechnologies] = useState([]);
-  const [stack, setStack] = useState([]);
+  const [technologies, setTechnologies] = useState<Technology[]>([]);
+  const [stack, setStack] = useState<Technology[]>([]);
   const [loading, setLoading] = useState(true);
 
   // Load JSON data
@@ -34,7 +34,7 @@ const TechSection = () => {
   }, []);
 
   // Add technology
-  const handleAdd = (technology) => {
+  const handleAdd = (technology: Technology) => {
     const alreadyExists = stack.some(
       (item) => item.id === technology.id
     );
@@ -53,7 +53,7 @@ const TechSection = () => {
   };
 
   // Remove one
-  const handleRemove = (id) => {
+  const handleRemove = (id: string) => {
     const removedTechnology = stack.find(
       (item) => item.id === id
     );
