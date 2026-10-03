@@ -35,6 +35,7 @@ const Hero = () => {
           </div>
         </div>
 
+
         <div className="flex justify-center lg:justify-end">
           <img src="src/assets/banner-stack.png" alt="Development Stack" className="w-full max-w-md object-contain"/>
         </div>

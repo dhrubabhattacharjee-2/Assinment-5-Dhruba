@@ -28,18 +28,8 @@ const Navbar = () => {
         </button>
 
         
-        <a
-          href="#home"
-          className="flex items-center gap-2"
-        >
-          <div className="gradient-bg flex h-7 w-7 items-center justify-center rounded-md text-xs font-bold text-white">
-            DS
-          </div>
-
-          <span className="text-lg font-bold">
-            <span className="text-gray-900">Dev </span>
-            <span className="brand-gradient">Stack</span>
-          </span>
+        <a href="#home" className="flex items-center">
+          <img src="src/assets/logo-text.png" alt="Dev Stack" className="h-9 w-auto object-contain"/>
         </a>
 
         
