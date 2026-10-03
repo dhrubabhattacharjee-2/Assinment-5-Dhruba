@@ -35,37 +35,10 @@ const Hero = () => {
           </div>
         </div>
 
-        
         <div className="flex justify-center lg:justify-end">
-          <div className="relative flex h-72 w-72 items-center justify-center sm:h-80 sm:w-80">
-            <div className="absolute inset-10 rounded-full bg-gradient-to-r from-orange-200 via-pink-200 to-purple-200 opacity-40 blur-3xl"></div>
-
-            <div className="relative rounded-3xl border border-white bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-orange-500/10 p-8 shadow-xl">
-              <div className="grid grid-cols-3 gap-3 rounded-2xl bg-gray-950 p-5 shadow-2xl">
-                <div className="col-span-3 rounded-lg bg-gradient-to-r from-orange-400 via-pink-500 to-purple-500 p-4 text-center text-2xl font-bold text-white">
-                  &lt;/&gt;
-                </div>
-
-                <div className="rounded-lg bg-gray-800 p-4 text-center text-cyan-300">
-                  JS
-                </div>
-
-                <div className="rounded-lg bg-gray-800 p-4 text-center text-blue-300">
-                  TS
-                </div>
-
-                <div className="rounded-lg bg-gray-800 p-4 text-center text-pink-300">
-                  CSS
-                </div>
-
-                <div className="col-span-3 rounded-lg bg-gray-800 p-4 text-center text-green-300">
-                  React + Node + Database
-                </div>
-              </div>
-            </div>
-          </div>
+          <img src="src/assets/banner-stack.png" alt="Development Stack" className="w-full max-w-md object-contain"/>
         </div>
-
+    
       </div>
     </section>
   );

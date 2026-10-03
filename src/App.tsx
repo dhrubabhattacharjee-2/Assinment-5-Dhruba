@@ -1,6 +1,7 @@
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import TechSection from './components/TechSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <TechSection />        
       </main>
 
+      <Footer />
     </div>
   );
 }
